@@ -86,8 +86,15 @@ class MainActivity : FlutterActivity() {
 //        }
 
 
-    //TRYING SECOND METHOD TO GET MAC ADDRESS 
-        private val macAddress: String
+    //TRYING SECOND METHOD TO GET MAC ADDRESS TODO: Security related Problem above 29 for getting MAC Address
+   // The code Below I provided attempts to retrieve the MAC address of the device
+    // by iterating through the network interfaces and checking for the "wlan0" interface.
+    // While this approach might work on some Android devices, it's important to
+    // understand that accessing the MAC address directly is restricted on Android starting
+    // from Android 10 (API level 29) for privacy and security reasons.
+
+
+    private val macAddress: String
         private get() {
             try {
                 val all = Collections.list(NetworkInterface.getNetworkInterfaces())
