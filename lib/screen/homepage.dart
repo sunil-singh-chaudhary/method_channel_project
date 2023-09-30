@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-import '../methodchannels/channels.dart';
+import '../methodchannels/platform_channel_support.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
